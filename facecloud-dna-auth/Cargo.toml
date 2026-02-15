@@ -1,0 +1,12 @@
+[package]
+name = "facecloud-dna-auth"
+version = "0.1.0"
+edition = "2021"
+description = "DNA-inspired multi-layer authentication and policy evaluation (deviceless)."
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+uuid = { workspace = true }

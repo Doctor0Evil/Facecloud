@@ -1,0 +1,13 @@
+[package]
+name = "facecloud-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core neuromorphic envelope and safety guard logic for Facecloud."
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+prometheus = { workspace = true }
+uuid = { workspace = true }

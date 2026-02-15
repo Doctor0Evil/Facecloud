@@ -1,0 +1,16 @@
+[package]
+name = "facecloud-api"
+version = "0.1.0"
+edition = "2021"
+description = "Public-facing API for Facecloud telemetry evaluation and DNA-style MFA policy checks."
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+uuid = { workspace = true }
+facecloud-core = { path = "../facecloud-core" }
+facecloud-dna-auth = { path = "../facecloud-dna-auth" }

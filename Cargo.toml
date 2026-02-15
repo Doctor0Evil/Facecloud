@@ -1,0 +1,25 @@
+[workspace]
+members = [
+  "facecloud-core",
+  "facecloud-dna-auth",
+  "facecloud-api",
+  "facecloud-cli"
+]
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+name = "facecloud-workspace"
+version = "0.1.0"
+description = "Facecloud: neuromorphic intelligence and deviceless software safety envelopes with DNA-like multi-layer authentication."
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+axum = "0.7"
+tokio = { version = "1.38", features = ["macros", "rt-multi-thread"] }
+uuid = { version = "1.8", features = ["v4", "serde"] }
+prometheus = "0.13"

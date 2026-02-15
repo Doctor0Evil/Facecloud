@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "crates/eco-corridor-core",
+]
+resolver = "2"

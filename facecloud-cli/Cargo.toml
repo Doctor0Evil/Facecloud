@@ -1,0 +1,12 @@
+[package]
+name = "facecloud-cli"
+version = "0.1.0"
+edition = "2021"
+description = "CLI for local Facecloud envelope checks and MFA policy evaluation."
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+clap = { version = "4.5", features = ["derive"] }
+facecloud-core = { path = "../facecloud-core" }
+facecloud-dna-auth = { path = "../facecloud-dna-auth" }
